@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+.gradio/
+streamlit_app/pacientes.csv
+Captura de tela*.png
