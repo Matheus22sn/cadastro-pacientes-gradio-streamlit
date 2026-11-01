@@ -2,6 +2,7 @@
 import pandas as pd
 from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 ARQUIVO_CSV = Path(__file__).parent / "pacientes.csv"
 COLUNAS = ["timestamp", "nome", "idade", "convenio", "prioridade", "motivo"]
@@ -43,7 +44,7 @@ def cadastrar():
         return
 
     linha = {
-        "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "timestamp": datetime.now(ZoneInfo("America/Sao_Paulo")).strftime("%Y-%m-%d %H:%M:%S"),
         "nome": nome,
         "idade": int(ss.idade),
         "convenio": ss.convenio,

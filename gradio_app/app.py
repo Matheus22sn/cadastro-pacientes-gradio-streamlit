@@ -15,7 +15,7 @@ def ultimos_pacientes(qtd=5):
 
 
 def validar(nome, idade, convenio, motivo):
-    if not nome and idade is None and not convenio and not motivo:
+    if not nome and not convenio and not motivo:
         return "Preencha os dados do paciente para fazer o cadastro."
     if not nome:
         return "Informe o nome do paciente."
