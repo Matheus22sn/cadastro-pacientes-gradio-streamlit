@@ -8,7 +8,7 @@ feita com duas bibliotecas Python de interface web.
 | `gradio_app/` | Gradio (`gr.Blocks`) | Localmente |
 | `streamlit_app/` | Streamlit (`st.form` + `st.session_state`) | Streamlit Community Cloud |
 
-**App publicado:** _(link do Streamlit Cloud)_
+**App publicado:** https://cadastro-pacientes-gradio-app-nqc6euceguzguhl3caxlkf.streamlit.app/
 
 ## Como executar
 
